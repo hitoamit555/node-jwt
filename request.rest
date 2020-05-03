@@ -10,24 +10,35 @@ Content-Type: application/json
 
 
 
-###
+###  this ###Use to seprate the b/w req
 GET http://localhost:3000/posts
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW1pdCIsImlhdCI6MTU4ODUyNDU1NX0.ENvpUyeHVJzJ5Brnolb7EsE076qbCQi2ez68oxDI-Vs
-//Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS3VtYXIiLCJpYXQiOjE1ODg1MjUzNjN9.iLC7H_SE1WMDcC_mAK8_7MCvA7o3Lzt3Prp3f9Ruz_4
+//// ######################################///////////
+//// ######################################////////////
+### AuthServer.js 4000 Req/Resp
 
 
-////AuthServer.js 4000 Req/Resp
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+  "username": "Amit"
+}
+
+###  
 
 GET http://localhost:3000/posts
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmltIiwiaWF0IjoxNTY4NzU5ODEyLCJleHAiOjE1Njg3NTk4Mjd9.0i6Im2gKz7jj8wM7aZZzOPaBS_xHoZWAqBwnldn-lQQ
+//Should be Access token and Start new 3000 Auth2Server.js in new terminal
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW1pdCIsImlhdCI6MTU4ODUzOTEzNCwiZXhwIjoxNTg4NTM5MTY0fQ.loQ2VQ58b6q23JYGkgSD5QkpmFsGkrgKWLnQLkDEZuk
 
+ //"refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW1pdCIsImlhdCI6MTU4ODUzODQ3M30.0jKSdbqXBaEshktoaE6YdApXbM6gAiQ-7jqMnBaP2Xw"
 ###
 
 DELETE http://localhost:4000/logout
 Content-Type: application/json
 
 {
-  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmltIiwiaWF0IjoxNTY4NzU5OTIyfQ.RT6wszuCeFLwC_6ksmNMIELxiC5s-uRivfRxyZof5ag"
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW1pdCIsImlhdCI6MTU4ODUzOTQ4MCwiZXhwIjoxNTg4NTM5NTEwfQ.1RaxbmfPyWqTz64OMy9LUVtB3wSLm-8t_6m1mDaXCxA"
 }
 
 ###
@@ -36,15 +47,6 @@ POST http://localhost:4000/token
 Content-Type: application/json
 
 {
-  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmltIiwiaWF0IjoxNTY4NzU5OTIyfQ.RT6wszuCeFLwC_6ksmNMIELxiC5s-uRivfRxyZof5ag"
-}
-
-###
-
-POST http://localhost:4000/login
-Content-Type: application/json
-
-{
-  "username": "Jim"
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW1pdCIsImlhdCI6MTU4ODUzOTQ0OH0.A3QxJh1w9byRRjoLUkwxrKBmPNFyK5-bIZlwmyS-VzY"
 }
 
