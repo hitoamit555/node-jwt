@@ -55,6 +55,14 @@ https://www.youtube.com/watch?v=mbsmsi7l3r4
 
 https://github.com/WebDevSimplified/JWT-Authentication
 
+User Auth
+https://www.youtube.com/watch?v=Ud5xKCYQTjM
+
+
+crypto password 
+https://www.youtube.com/watch?v=heldAl8Cfr4
+
+
 Permission
 https://www.youtube.com/watch?v=jI4K7L-LI58
 
